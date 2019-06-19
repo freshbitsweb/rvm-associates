@@ -39,7 +39,7 @@
     transform-origin: 174px -78px;
 	-webkit-transform: rotate(19.31deg);
     -webkit-transform-origin: 174px -78px;
-	
+
 }
 @media (min-width: 992px) and (max-width: 1199px){
    .single_plan__block::before {
@@ -61,7 +61,7 @@
     padding: 35px 0 35px 30px;
     width: 54%;
 	position:relative;
-	z-index:9;
+    z-index:9;
 }
 
 @media (max-width:767px){
@@ -139,7 +139,7 @@
 }
 
 @media (max-width: 767px){
-    
+
     .single_progress__block {
         border: 1px solid #dddddd;
         margin-bottom: 0;
@@ -175,10 +175,10 @@
       height: auto!important;
       padding: 40px 15px;
     }
-   
+
 }
 
-    
+
 .our_project_wrap__block {
   background: #f7f8fa none repeat scroll 0 0;
 }
@@ -272,7 +272,7 @@
     transform-origin: 174px -78px;
     -webkit-transform: rotate(17.31deg);
     -webkit-transform-origin: 174px -78px
-	
+
 }
 .left_quote__block > h2, .quote__block h2 {
     font-weight: bold;
@@ -306,7 +306,7 @@
     position: relative;
     width: 54%;
     z-index: 9;
-   
+
 }
 .single_quote__block.style_2{
 	width: 86%;
@@ -494,7 +494,7 @@
         padding-bottom: 18px;
         height: auto;
     }
-    
+
     .left_quote__block::before{
         background: transparent;
     }
@@ -602,7 +602,7 @@
     .smallImg__block.project-bg1 {
       margin: 25px 0;
     }
-    
+
 }
 
 /*=======Blog Section=========*/
