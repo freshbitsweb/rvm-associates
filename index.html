@@ -25,6 +25,10 @@
                 width: 99%;
                 height: 450px;
             }
+
+            html {
+               scroll-behavior: smooth;
+            }
         </style>
     </head>
 <body>
@@ -48,7 +52,7 @@
     <!--loader-->
 
     <!--Header Section Start-->
-    <header>
+    <header id="home">
         <div class="top-part__block ptb-15">
             <div class="container">
                 <div class="row">
@@ -72,7 +76,7 @@
                 <div class="row">
                     <div class="col-md-4">
                         <div class="logo">
-                            <a href="#">
+                            <a href="#home">
                                 <img src="assets/images/logo.png" alt="Logo">
                             </a>
                         </div>
@@ -115,10 +119,26 @@
                     </div>
                     <div class="collapse navbar-collapse" id="navbar-menu">
                         <ul class="nav navbar-nav mobile-menu">
-                            <li><a class="custom_btn__block" href="#">Home</a></li>
-                            <li><a class="custom_btn__block" href="#">Who We Are</a></li>
-                            <li><a class="custom_btn__block" href="#">Practice Area</a></li>
-                            <li><a class="custom_btn__block" href="#">Contact</a></li>
+                            <li>
+                                <a class="custom_btn__block"
+                                    href="#home"
+                                >Home</a>
+                            </li>
+                            <li>
+                                <a class="custom_btn__block"
+                                    href="#about-section"
+                                >Who We Are</a>
+                            </li>
+                            <li>
+                                <a class="custom_btn__block"
+                                    href="#practice-area"
+                                >Practice Area</a>
+                            </li>
+                            <li>
+                                <a class="custom_btn__block"
+                                    href="#contact"
+                                >Contact</a>
+                            </li>
                         </ul>
                     </div>
                 </div>
@@ -192,7 +212,7 @@
     <!--Testimonials Section end-->
 
     <!--Practice Areas wrapper start-->
-    <section class="plaing_wrap__block padding ptb-xs-60">
+    <section class="plaing_wrap__block padding ptb-xs-60" id="practice-area">
         <div class="container">
             <div class="row pb-30 text-center">
                 <div class="col-sm-12 mb-20">
@@ -314,7 +334,7 @@
     <!--Practice Areas wrapper end-->
 
     <!--Quote and support section-->
-    <section class="quote_wrap__block mb-45">
+    <section id="contact" class="quote_wrap__block mb-45">
         <div class="container">
             <div class="row">
                 <div class="col-sm-6 col-md-7 no-padding">
@@ -375,30 +395,34 @@
                             <span>ABOUT US</span>
                         </h2>
                         <div class="textwidget">
-                            <a href="index1.html" class="footer-logo">
-                                <img src="assets/images/footer-logo.png" alt="Awesome Logo">
+                            <a href="#home" class="footer-logo">
+                                <img src="assets/images/footer-logo.png"
+                                    alt="Awesome Logo"
+                                >
                             </a>
                             <p>
-                                    We are capable enough to provide the below mentioned services to our clients with all the experiences and knowledge we have gained.
+                                We are capable enough to provide the below mentioned services to our clients with all the experiences and knowledge we have gained.
                             </p>
                         </div>
                     </div>
                 </div>
                 <div class="col-md-4">
                     <div class="widget widget_links">
-                        <h2 class="widget-title"><span>COMPANY LINKS</span></h2>
+                        <h2 class="widget-title">
+                            <span>COMPANY LINKS</span>
+                        </h2>
                         <ul class="wprt-links clearfix col2">
                             <li>
-                                <a href="#">Home</a>
+                                <a href="#home">Home</a>
                             </li>
                             <li>
-                                <a href="#">Who We Are</a>
+                                <a href="#about-section">Who We Are</a>
                             </li>
                             <li>
-                                <a href="#">Practice Area</a>
+                                <a href="#practice-area">Practice Area</a>
                             </li>
                             <li>
-                                <a href="#">Contact</a>
+                                <a href="#contact">Contact</a>
                             </li>
                         </ul>
                     </div>
