@@ -366,7 +366,7 @@
                 <div class="col-sm-6 col-md-5 no-padding">
                     <div class="quote__block ptb-80">
                         <h2>Send us a message</h2>
-                        <form action="https://formspree.io/rvm.rajkot@gmail.com" method="POST">
+                        <form id="contact-form" method="POST">
                             <input name="name" type="text" placeholder="Your Name*" required>
                             <input name="email" type="email" placeholder="Email Address">
                             <input name="phone" type="text" placeholder="Phone*" required>
@@ -460,5 +460,32 @@
 
     <!-- custom Js -->
     <script src="assets/js/custom.js" type="text/javascript"></script>
+
+    <script>
+        $(document).ready(function() {
+            $("#contact-form").on("submit", function(){
+                var formData = $(this).serializeArray().reduce(function(obj, item) {
+                    obj[item.name] = item.value;
+
+                    return obj;
+                }, {});
+
+                $.ajax({
+                    url: "https://formsubmit.co/ajax/rvm.rajkot@gmail.com",
+                    method: "POST",
+                    data: formData,
+                    dataType: "json"
+                }).done(function() {
+                    alert('Thank you. We will get back to you shortly.');
+
+                    $("#contact-form").trigger("reset");
+                }).fail(function() {
+                    alert("Oops! Something went wrong.");
+                });
+
+                return false;
+            })
+        });
+    </script>
 </body>
 </html>
